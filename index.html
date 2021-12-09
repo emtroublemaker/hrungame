@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    //function rotAlert(){
+    //    alert("Rotate your phone !!");
+    //};
+
+    window.addEventListener("orientationchange", function() {
+    if ( window.orientation == 0 || window.orientation == 180){
+        // WHEN IN PORTRAIT MODE
+        //alert("Rotate your phone !!");
+    }
+    else{
+        window.location.href = 'main.html';
+        //alert("Rotate back your phone !!");
+    }
+    }, false);
+</script>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+</style>
+</head>
+<body>
+     <div class="imgbox">
+        <img class = "center-fit " src="assets/Pages/Instructions.jpg">
+    </div>    
+</body>
+
+</html>
